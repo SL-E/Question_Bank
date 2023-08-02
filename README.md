@@ -1,2 +1,2 @@
-# Quiz_Bank
+# Question_Bank
 Question bank for UoW and UoA
