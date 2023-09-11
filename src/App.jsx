@@ -6,7 +6,6 @@ import AuthRouter from './components/AuthRouter'
 import NavigationBar from './components/NavigationBar'
 import BottomBar from './components/BottomBar'
 import Background from './components/Background'
-import Admin from './pages/Admin';
 
 function App() {
   return (
