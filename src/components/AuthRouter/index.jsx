@@ -8,6 +8,8 @@ import Main from '../../pages/Main';
 import Admin from '../../pages/Admin';
 import './index.css';
 import TeachersList from '../TeacherList';
+import EditTeacherList from '../EditTeacherList';
+import Test from '../../pages/Test'
 
 const requireAuth = (component, isAuthenticated) => {
   return isAuthenticated ? component : <Navigate to="/login" replace />;
@@ -46,9 +48,21 @@ function AuthRouter ({ isAuthenticated }) {
       ),
     },
     {
-      path: '/TheachersList',
+      path: '/TeachersList',
       element: <TeachersList />,
     },
+    {
+      path: '/EditTeacherList',
+      element: <EditTeacherList />,  
+    },
+
+
+    {
+      path: '/Test',
+      element: <Test />,
+    },
+
+
     {
       path: '*',
       element: <Navigate to="/" replace />,

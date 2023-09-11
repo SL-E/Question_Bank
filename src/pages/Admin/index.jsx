@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import TeachersList from '../../components/TeacherList';
+import EditTeacherList from '../../components/EditTeacherList';
+
 import './index.css';
 
 function Admin() {
@@ -11,15 +13,27 @@ function Admin() {
             case "Account Info":
                 setContent("Hello!");
                 break;
+
             case "Universities":
                 setContent("UoW");
                 break;
+
             case "List of Divisions":
                 setContent("IT");
                 break;
-            case "List of Tearchers":
+
+            case "List of Teachers":
                 setContent(<TeachersList />);
                 break;
+
+            case "Edit List of Teachers":
+                setContent(<TeachersList onAddNewTeacherClick={() => setContent(<EditTeacherList />)} />);
+                break;
+
+            case "Back to List of Teachers":
+                setContent(<EditTeacherList onBackToTeachersListClick={() => setContent(<TeachersList />)} />);
+                break;
+
             case "Settings":
                 setContent("Edit");
                 break;
@@ -44,7 +58,7 @@ function Admin() {
                     <Link to="#" onClick={() => handleMenuClick("List of Divisions")}>List of Divisions</Link>
                 </div>
                 <div className="menu-item">
-                    <Link to="#" onClick={() => handleMenuClick("List of Tearchers")}>List of Tearchers</Link>
+                    <Link to="#" onClick={() => handleMenuClick("List of Teachers")}>List of Tearchers</Link>
                 </div>
                 <div className="menu-item">
                     <Link to="#" onClick={() => handleMenuClick("Settings")}>Settings</Link>
