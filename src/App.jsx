@@ -7,6 +7,7 @@ import NavigationBar from './components/NavigationBar'
 import BottomBar from './components/BottomBar'
 import Background from './components/Background'
 
+
 function App() {
   return (
     <Router>
@@ -18,8 +19,7 @@ function App() {
         <BottomBar></BottomBar>
       </div>
       
-    </Router>
-
+      </Router>
   );
 }
 

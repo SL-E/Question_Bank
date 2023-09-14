@@ -11,41 +11,6 @@ function AddNewTeacher() {
   const [content, setContent] = useState("");
   const navigate = useNavigate();
 
-  const handleDivisionClick = (menu) => {
-    switch(menu) {
-      case "IT":
-        setContent("IT");
-        break;
-
-      case "Art":
-        setContent("Art");
-        break;
-
-      default:
-        setContent(""); // Reset content
-        break;
-    }
-  };
-
-  const handleDivisionSelect = (division) => {
-    // 根据 division 设置可选框的选择状态
-    switch (division) {
-      case 'IT':
-        // 在这里处理 IT 部门的选择状态
-        break;
-  
-      case 'Art':
-        // 在这里处理 Art 部门的选择状态
-        break;
-  
-      // 添加其他部门的处理逻辑
-  
-      default:
-        break;
-    }
-
-  };
-
   const onBackBtnClick = () => {
     navigate('/Admin/teacherslist')
   }

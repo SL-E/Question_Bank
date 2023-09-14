@@ -16,7 +16,7 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false
     },
     password: {
-      type: DataTypes.STRING(20),
+      type: DataTypes.STRING(255),
       allowNull: false
     },
     email: {
@@ -27,7 +27,7 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING(20),
       allowNull: true
     },
-    img_path: {
+    img: {
       type: DataTypes.STRING(255),
       allowNull: true
     },

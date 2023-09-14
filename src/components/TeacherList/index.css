@@ -41,23 +41,40 @@ th {
     background-color: transparent; /* 纯透明 */
 }
   
-  /* Edit 按钮样式 */
-td a {
+
+
+button {
     display: inline-block;
     padding: 5px 10px;
     background-color: #007bff;
     color: white;
     text-decoration: none;
     border-radius: 5px;
+    border: none; /* 移除边框 */
+    outline: none; /* 移除默认轮廓效果 */
 }
   
   /* 鼠标悬停时的按钮样式 */
-td a:hover {
+button:hover {
     background-color: #0056b3;
 }
 
+td a.delete-link {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: red; /* 修改为红色 */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+  
+  /* 鼠标悬停时的 Delete 按钮样式 */
+td a.delete-link:hover {
+    background-color: darkred; /* 鼠标悬停时的深红色 */
+}
+
 td:nth-child(1),th:nth-child(1) {
-    width: 10%;
+    width: 12%;
 }
 
 td:nth-child(2),th:nth-child(2) {
@@ -65,7 +82,7 @@ td:nth-child(2),th:nth-child(2) {
 }
 
 td:nth-child(3),th:nth-child(3) {
-    width: 20%;
+    width: 17%;
 }
 
 td:nth-child(4),th:nth-child(4) {
@@ -73,7 +90,7 @@ td:nth-child(4),th:nth-child(4) {
 }
 
 td:nth-child(5),th:nth-child(5) {
-    width: 20%;
+    width: 21%;
 }
 
 .add-button {
