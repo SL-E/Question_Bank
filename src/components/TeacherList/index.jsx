@@ -1,11 +1,12 @@
-import { Link } from 'react-router-dom'; // 导入 Link 组件
+import { Link, useNavigate } from 'react-router-dom'; // 导入 Link 组件
 import React, { useState } from 'react';
-import EditTeacherList from '../../components/EditTeacherList';
+import AddNewTeacherList from '../AddNewTeacherList';
 
 import './index.css';
 
-function TeachersList({ onAddNewTeacherClick }) {
+function TeachersList() {
     const [sortBy, setSortBy] = useState(''); // 状态来存储排序方式
+    const navigate = useNavigate();
     const [teachersData, setTeachersData] = useState([
     { id: 1, email: 'teacher1@example.com', userName: 'Teacher 1', organisation: 'UoW', division: 'IT' },
     { id: 2, email: 'teacher2@example.com', userName: 'Teacher 2', organisation: 'UoA', division: 'IT' },
@@ -50,13 +51,20 @@ function TeachersList({ onAddNewTeacherClick }) {
       setTeachersData(sortedTeachers);
     }
   };
-  
 
+  const onAddBtnClick = () => {
+    navigate('/Admin/addnewteacher')
+  }
+
+  const onEditBtnClick = () => {
+    navigate('/Admin/editteacher')
+  }
+  
   return (
     <div className="teachers-content">
       <div className="header-container">
             <h2>List of Teachers</h2>
-            <button className="add-button" onClick={onAddNewTeacherClick}>Add a new teacher</button>
+            <button className="add-button" onClick={onAddBtnClick}>Add a new teacher</button>
       </div>
 
       <div className="table-container">
@@ -84,7 +92,14 @@ function TeachersList({ onAddNewTeacherClick }) {
           <tbody>
             {teachersData.map((teacher, index) => (
               <tr key={teacher.id} className={index % 2 === 0 ? 'odd-row' : 'even-row'}>
-                <td><Link to={`/edit/${teacher.id}`}>Edit</Link></td>   
+                <td>
+                  <div>
+                    <button className="edit-link" onClick={onEditBtnClick}>Edit</button>
+                  </div>
+                  <div>
+                    <Link to={`/delete/${teacher.id}`} className="delete-link">Delete</Link>
+                  </div>
+                </td>   
                 {/* 将 /edit/${teacher.id} 替换为实际的编辑路径 */}
                 <td>{teacher.email}</td>
                 <td>{teacher.userName}</td>

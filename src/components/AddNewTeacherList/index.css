@@ -1,6 +1,6 @@
 /* EditTeacherList.css */
 
-.edit-teacher-list {
+  .edit-teacher-list {
     margin: 10%;
   }
   
@@ -96,5 +96,20 @@
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+  }
+  
+  .confirm-button {
+    display: block;
+    margin: 0 auto; /* 水平居中 */
+    padding: 10px 20px; /* 添加内边距 */
+    background-color: #007bff; /* 默认蓝色按钮颜色 */
+    color: #fff; /* 文字颜色为白色 */
+    border: none; /* 去掉边框 */
+    border-radius: 5px; /* 圆角 5px */
+    cursor: pointer; /* 鼠标指针样式为手型 */
+  }
+  
+  .confirm-button:hover {
+    background-color: #0056b3; /* 鼠标悬停时的颜色 */
   }
   
