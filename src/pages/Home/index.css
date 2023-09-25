@@ -10,7 +10,7 @@
   margin: 0 auto; /* 水平居中 */
 }
   
-  .top-section {
+  .top-section-home {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -19,7 +19,7 @@
     border-radius: 10px;
   }
 
-  .top-section >span{
+  .top-section-home >span{
     position: absolute;
     top: 170px;
   }
@@ -33,7 +33,7 @@
     font-size: 15px;
   }
   
-  .middle-section {
+  .middle-section-home {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -73,7 +73,7 @@
     align-items: center;
   }
   
-  .bottom-section {
+  .bottom-section-home {
     display: flex;
     justify-content: space-between;
     width: 100%;

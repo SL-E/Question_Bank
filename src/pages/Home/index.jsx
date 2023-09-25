@@ -5,7 +5,7 @@ function Home() {
   return (
     <div className="main-container">
 
-      <div className="top-section">
+      <div className="top-section-home">
         <span>Why Choose Us?</span>
         <div className="box">Includes:<br/>
                   Student test questions<br/>
@@ -27,7 +27,7 @@ function Home() {
           </div>
       </div>
 
-      <div className="middle-section">
+      <div className="middle-section-home">
         <div className="image-container">
           <img src="Test1.jpg" alt="Image1" />
         </div>
@@ -38,7 +38,7 @@ function Home() {
         </div>
       </div>
 
-      <div className="bottom-section">
+      <div className="bottom-section-home">
         <div className="bordered-box2">Clear permissions:<br/>
                 The user's visual permission<br/>
                 User permissions<br/>

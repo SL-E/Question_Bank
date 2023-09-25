@@ -15,11 +15,11 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false
     },
     password: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING(20),
       allowNull: false
     },
-    email: {
-      type: DataTypes.STRING(50),
+    permanent_email: {
+      type: DataTypes.STRING(20),
       allowNull: false
     }
   }, {

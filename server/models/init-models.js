@@ -2,6 +2,8 @@ var DataTypes = require("sequelize").DataTypes;
 var _admin = require("./admin");
 var _courses = require("./courses");
 var _divisions = require("./divisions");
+var _question = require("./question");
+var _question_options = require("./question_options");
 var _question_types = require("./question_types");
 var _questions = require("./questions");
 var _teachers = require("./teachers");
@@ -11,6 +13,8 @@ function initModels(sequelize) {
   var admin = _admin(sequelize, DataTypes);
   var courses = _courses(sequelize, DataTypes);
   var divisions = _divisions(sequelize, DataTypes);
+  var question = _question(sequelize, DataTypes);
+  var question_options = _question_options(sequelize, DataTypes);
   var question_types = _question_types(sequelize, DataTypes);
   var questions = _questions(sequelize, DataTypes);
   var teachers = _teachers(sequelize, DataTypes);
@@ -20,6 +24,8 @@ function initModels(sequelize) {
   courses.hasMany(questions, { as: "questions", foreignKey: "course_id"});
   teachers.belongsTo(divisions, { as: "division", foreignKey: "division_id"});
   divisions.hasMany(teachers, { as: "teachers", foreignKey: "division_id"});
+  question_options.belongsTo(question, { as: "question", foreignKey: "question_id"});
+  question.hasMany(question_options, { as: "question_options", foreignKey: "question_id"});
   questions.belongsTo(question_types, { as: "type", foreignKey: "type_id"});
   question_types.hasMany(questions, { as: "questions", foreignKey: "type_id"});
   courses.belongsTo(teachers, { as: "tid_teacher", foreignKey: "tid"});
@@ -33,6 +39,8 @@ function initModels(sequelize) {
     admin,
     courses,
     divisions,
+    question,
+    question_options,
     question_types,
     questions,
     teachers,
