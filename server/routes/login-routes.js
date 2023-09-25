@@ -52,7 +52,7 @@ router.get("/login", function (req, res) {
 router.post("/login", async function (req, res) {
     const { userName, passWord } = req.body || {};
     const teachersModel = req.options.models.teachers;
-    try {console.log(111, teachersModel)
+    try {
         // find user 
         const result = await teachersModel.findOne({ where: { email: userName, password: passWord } })  
         console.log(result)
@@ -75,7 +75,7 @@ router.post("/login", async function (req, res) {
     }
 });
 
-// logout
+// logout 
 router.post("/loginout", async function (req, res) {
     const { email } = req.body;
     const idx = req.session.users ? req.session.users.findIndex((item) => item === email) : -1;

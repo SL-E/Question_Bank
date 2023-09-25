@@ -6,6 +6,9 @@ import Login from '../../pages/Login'
 import Home from '../../pages/Home';
 import Main from '../../pages/Main';
 import Admin from '../../pages/Admin';
+import QuestionsList from '../../pages/QuestionsList';
+import EditQuestion from '../../pages/EditQuestion';
+
 import './index.css';
 import TeachersList from '../TeacherList';
 import AddNewTeacherList from '../AddNewTeacherList';
@@ -64,7 +67,14 @@ function AuthRouter ({ isAuthenticated }) {
         },
       ]
     },
-    
+    {
+      path: '/question/view',
+      element: <QuestionsList />, // 将导航到 QuestionsList 组件
+    },
+    {
+      path: '/question/edit',
+      element: <EditQuestion />, // 将导航到 QuestionsList 组件
+    },
     {
       path: '/Test',
       element: <Test />,
