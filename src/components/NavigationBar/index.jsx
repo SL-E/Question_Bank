@@ -40,16 +40,16 @@ function NavigationBar() {
                         </li>
                         <li className="dropdown">
                             <div className="dropdown-content">
-                                <Link to="/exam/view">Create Exam</Link>
-                                <Link to="/exam/upload">Upload Exam</Link>
-                                <Link to="/exam/upload">Download Exam</Link>
+                                <Link to="/exam/view">View Exam</Link>
+                                <Link to="/exam/new">Create Exam</Link>
+                                <Link to="/exam/preview">Preview Exam</Link>
                             </div>
                             <div>Exam <span className="dropdown-arrow">&#9662;</span></div>
                         </li>
                         <li className="dropdown">
                             <div className="dropdown-content">
                                 <Link to="/archive/view">View Archive</Link>
-                                <Link to="/archive/edit">Edit Archive</Link>
+                                <Link to="/archive/edit">Export Archive</Link>
                                 {/* 添加其他选项 */}
                             </div>
                             <div>Archive <span className="dropdown-arrow">&#9662;</span></div>

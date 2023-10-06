@@ -1,0 +1,97 @@
+/* ExamsList.css */
+
+.exams-list {
+    background-color: rgba(192, 192, 192, 0.3);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .filter {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 5px;
+  }
+  
+  select,
+  input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .exams-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .exams-table th,
+  .exams-table td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .exams-table th {
+    background-color: #007BFF;
+    color: #fff;
+  }
+  
+  .sort-row select,
+  .sort-row input[type="date"] {
+    width: 100%;
+    padding: 5px;
+  }
+  
+  .sort-row td {
+    padding: 0;
+    border-bottom: none;
+  }
+  
+  .sort-row select {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .sort-row input[type="date"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  tbody tr:hover {
+    background-color: #ddd;
+  }
+  
+.preview-button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.preview-button:hover {
+  background-color: #0056b3;
+}

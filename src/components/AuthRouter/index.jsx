@@ -14,8 +14,16 @@ import TeachersList from '../TeacherList';
 import AddNewTeacherList from '../AddNewTeacherList';
 import EditTeacher from '../EditTeacher';
 
+import ExamsList from '../../pages/ExamList';
+import CreateExam from '../../pages/CreateExam';
+import ExamPreview from '../../pages/ExamPreview';
+import EditExam from '../../pages/EditExam';
+
+
 import Test from '../../pages/Test'
 import Test2 from '../../pages/Test2'
+import Test3 from '../../pages/Test3'
+
 
 const requireAuth = (component, isAuthenticated) => {
   return isAuthenticated ? component : <Navigate to="/login" replace />;
@@ -76,6 +84,22 @@ function AuthRouter ({ isAuthenticated }) {
       element: <EditQuestion />, // 将导航到 QuestionsList 组件
     },
     {
+      path: '/exam/view',
+      element: <ExamsList />, // 将导航到 QuestionsList 组件
+    },
+    {
+      path: '/exam/new',
+      element: <CreateExam />, // 将导航到 QuestionsList 组件
+    },
+    {
+      path: '/exam/preview',
+      element: <ExamPreview />, // 将导航到 QuestionsList 组件
+    },
+    {
+      path: '/exam/edit',
+      element: <EditExam />, // 将导航到 QuestionsList 组件
+    },
+    {
       path: '/Test',
       element: <Test />,
     },
@@ -83,6 +107,11 @@ function AuthRouter ({ isAuthenticated }) {
     {
       path: '/Test2',
       element: <Test2 />,
+    },
+
+    {
+      path: '/Test3',
+      element: <Test3 />,
     },
 
     {

@@ -1,0 +1,80 @@
+/* editpreview.css */
+
+.exam-preview {
+    background-color: rgba(0, 0, 0, 0.3); /* 设置背景颜色，30% 透明度灰色 */
+    padding: 20px; /* 添加内边距 */
+  }
+  
+  h1 {
+    font-size: 24px; /* 设置标题字体大小 */
+    margin-bottom: 20px; /* 设置下外边距 */
+  }
+  
+  .exam-compare {
+    display: flex; /* 左右排列 */
+    
+    margin-bottom: 20px; /* 设置下外边距 */
+  }
+  
+  .exam-detail {
+    display: flex; /* 左右排列 */
+    align-items: center; /* 垂直居中对齐 */
+  }
+  
+  label {
+    margin-right: 10px; /* 右外边距 */
+  }
+  
+  .wide-select {
+    width: 200px; /* 增加下拉菜单的宽度 */
+  }
+  
+  .exam-content {
+    display: flex; /* 左右排列 */
+  }
+  
+  .e-left-content,
+  .e-right-content {
+    flex: 1; /* 占据可用空间的一部分 */
+    background-color: #fff; /* 设置背景颜色 */
+    width: 20vw; /* 加宽左右两侧内容 */
+    height: 10vw;
+    padding: 20px; /* 添加内边距 */
+    border-radius: 5px; /* 设置圆角 */
+    margin-right: 20px; /* 右外边距 */
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center; /* 居中对齐按钮 */
+    margin-top: 20px; /* 上外边距 */
+  }
+  
+  .edit-button {
+    background-color: blue; /* 设置“Edit”按钮为蓝色 */
+    color: white; /* 设置文字颜色为白色 */
+    padding: 8px 16px; /* 添加内边距以增加按钮大小 */
+    border: none; /* 移除边框 */
+    border-radius: 5px; /* 添加圆角 */
+    cursor: pointer; /* 鼠标指针样式为手型 */
+    margin-right: 10px; /* 右外边距 */
+  }
+  
+  .export-button {
+    background-color: yellow; /* 设置“Export”按钮为黄色 */
+    color: black; /* 设置文字颜色为黑色 */
+    padding: 8px 16px; /* 添加内边距以增加按钮大小 */
+    border: none; /* 移除边框 */
+    border-radius: 5px; /* 添加圆角 */
+    cursor: pointer; /* 鼠标指针样式为手型 */
+  }
+  
+  .save-to-button {
+    background-color: greenyellow; /* 设置“Export”按钮为黄色 */
+    color: black; /* 设置文字颜色为黑色 */
+    padding: 8px 16px; /* 添加内边距以增加按钮大小 */
+    border: none; /* 移除边框 */
+    border-radius: 5px; /* 添加圆角 */
+    cursor: pointer; /* 鼠标指针样式为手型 */
+  }
+  

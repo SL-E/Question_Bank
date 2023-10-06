@@ -1,0 +1,180 @@
+/* CreateExam.css */
+
+.create-exam-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(192, 192, 192, 0.3);
+    border-radius: 5px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .create-exam-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .top-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .top-section-item {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .top-section-item label {
+    font-weight: bold;
+    margin-right: 10px;
+    min-width: 100px; /* 保持 label 宽度一致 */
+  }
+  
+  .top-section-item select,
+  .top-section-item input[type="text"] {
+    flex: 1; /* 填充剩余空间 */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+
+  /* 样式类用于按钮容器 */
+.sort-buttons {
+  display: flex;
+  flex-direction: column; /* 让按钮垂直排列 */
+  align-items: center; /* 水平居中 */
+}
+
+/* 样式类用于按钮 */
+.sort-buttons button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* 样式类用于活动按钮（被点击的按钮） */
+.sort-buttons .active {
+  color: #007bff; /* 活动按钮颜色，你可以根据需要更改 */
+  font-weight: bold;
+}
+
+/* 样式类用于箭头符号 */
+.arrow {
+  font-size: 18px; /* 符号大小，你可以根据需要调整 */
+}
+
+/* 样式类用于上箭头符号 */
+.arrow-up {
+  transform: rotate(180deg); /* 旋转180度，将其颠倒 */
+}
+
+  
+  .left-section {
+    flex: 1;
+    background-color: rgba(192, 192, 192, 0.3);
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
+  /* 右侧部分 */
+  .right-section {
+    flex: 1;
+    background-color: rgba(192, 192, 192, 0.3);
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+  .left-section,
+  .right-section {
+    flex: 1;
+    background-color: rgba(192, 192, 192, 0.3);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .left-section table,
+  .right-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .left-section th,
+  .left-section td,
+  .right-section th,
+  .right-section td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  /* 调整右侧表格的可选框大小以匹配左侧表格 */
+  .right-section input[type="checkbox-select"] {
+    width: 13px;
+    height: 13px;
+  }
+
+  .right-section input[type="text"] {
+    width: 35px;
+    height: 20px;
+  }
+
+  .middle-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  
+  
+  .middle-buttons button {
+    background-color: #007BFF; /* 蓝色背景 */
+    color: #fff; /* 白色文字 */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 0 10px;
+  }
+  
+  .middle-buttons button:hover {
+    background-color: #0056b3; /* 鼠标悬停时的背景颜色 */
+  }
+
+  .bottom-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .preview-button,
+  .save-button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #007BFF; /* 蓝色背景 */
+    color: #fff; /* 白色文字 */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .preview-button:hover,
+  .save-button:hover {
+    background-color: #0056b3; /* 鼠标悬停时的背景颜色 */
+  }
