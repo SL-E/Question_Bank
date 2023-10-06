@@ -28,24 +28,31 @@ function ExamPreview() {
         </div>
       </div>
       <div className="exam-content">
-        <div className="e-left-content">
+        <div className="e-left-container"> {/* 左侧容器 */}
+          <div className="e-left-content"> 
+            {/* 左侧内容 */}
+          </div>
           <div className="button-container">
             <button className="edit-button">Edit</button>
             <button className="export-button">Export</button>
             <button className="save-to-button">Save to the original version</button>
           </div>
-          {/* 左侧内容 */}
+          
+            
+          
         </div>
-        <div className="e-right-content">
+        <div className="e-right-container"> {/* 右侧容器 */}
+          <div className="e-right-content">
+              {/* 右侧内容 */}
+          </div>
           <div className="button-container">
             <button className="edit-button">Edit</button>
             <button className="export-button">Export</button>
             <button className="save-to-button">Save to the original version</button>
           </div>
-          {/* 右侧内容 */}
+          
         </div>
       </div>
-      
     </div>
   );
 }

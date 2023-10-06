@@ -67,6 +67,7 @@
     border: none; /* 移除边框 */
     border-radius: 5px; /* 添加圆角 */
     cursor: pointer; /* 鼠标指针样式为手型 */
+    margin-right: 10px; /* 右外边距 */
   }
   
   .save-to-button {
