@@ -1,0 +1,356 @@
+.edit-question{
+    width: 60vw;
+    height: 80vh;
+    overflow-y: auto;
+}
+
+.top-row {
+    margin-top: 10px;
+}
+
+/* 样式 for "General Tags" section */
+.tag-input-container.active .add-tag-container,
+.tag-input-container.active .tag-container,
+.tag-input-container.active .dropdown {
+  display: inline-block;  
+}
+
+.tag-input-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.tag-container {
+  display: inline-block;
+  margin-right: 10px;
+  width: 300px;
+}
+
+.tag {
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+  color: #333;
+}
+
+.tag button.remove-tag {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 5px;
+  padding: 0;
+}
+
+.tag button.remove-tag:hover {
+  background-color: darkred;
+}
+
+.add-tag-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-tag {
+  margin-left: 10px;
+}
+
+.input {
+  width: 100px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  vertical-align: middle;
+  outline: none;
+
+}
+
+.dropdown {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+  position: absolute;
+}
+
+/* top-section 和 middle-section 之间的横线样式 */
+.top-section-EQ {
+    border-bottom: 1px solid #ccc;
+  }
+  
+.left-section-EQ .section-title, .right-section-EQ .section-title{
+  background-color: red;
+  color: #fff;
+  font-weight: bold;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: calc(100% + 10px);
+  margin-left: -10px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+  /* 删除按钮样式 */
+.top-section-EQ .delete-button {
+    float: right;
+    margin-left: 400px;
+    background-color: red; /* 设置背景颜色为红色 */
+    color: white; /* 设置文字颜色为白色 */
+    padding: 8px 16px; /* 添加内边距以增加按钮大小 */
+    border: none; /* 移除边框 */
+    border-radius: 5px; /* 添加圆角 */
+    cursor: pointer; /* 鼠标指针样式为手型 */
+}
+  
+  /* 鼠标悬停时的按钮样式 */
+.top-section-EQ .delete-button:hover {
+    background-color: darkred; /* 鼠标悬停时的背景颜色为深红色 */
+}
+
+.section-item{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.select-grades{
+    width: 80px;
+    height: 35px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.select-minutes{
+  width: 80px;
+  height: 35px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.section-item span {
+  display: inline-block; /* 将 span 元素设置为块级元素 */
+  width: 130px;
+  margin-left: 10px;
+  text-align: right;
+  margin-right: 20px; /* 可根据需要调整右边距 */
+}
+
+/* 输入框样式 */
+.input-box {
+  width: 70%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px; /* 内边距 */
+  vertical-align: middle; /* 垂直居中对齐 */
+  outline: none;
+}
+
+
+
+.question-text-input {
+  height: 80px; /* 设置输入框的高度 */
+  /* 其他样式规则 */
+}
+
+.question-option{
+  margin-left: 135px;
+  height: 80px;
+}
+  
+  /* 模块标题样式 */
+.module-title {
+    font-weight: bold; /* 粗体 */
+    margin-bottom: 5px; /* 下外边距 */
+}
+  
+  /* 添加横线样式 */
+.divider {
+    border-top: 1px solid #ccc;
+    margin: 20px 0; /* 上下外边距 */
+}
+
+  /* 父容器样式，用于左右排列 */
+.middle-section-EQ {
+    display: flex;
+    justify-content: space-between; /* 左右对齐 */
+}
+  
+/* 左侧部分样式 */
+.left-section-EQ {
+    flex: 70; /* 占据可用空间的一部分 */
+    background-color: rgba(192, 192, 192, 0.3); /* 浅灰色，30% 透明度 */
+    border-radius: 5px; /* 角部弧度5 */
+    margin-top: 20px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.custom-date-input {
+  background-color: #f4f4f4; /* 背景颜色 */
+  border: 1px solid #ccc; /* 边框 */
+  border-radius: 5px; /* 边框圆角 */
+  padding: 5px 10px; /* 内边距 */
+  font-size: 16px; /* 字体大小 */
+  color: #333; /* 文本颜色 */
+  width: 178px; /* 宽度 */
+}
+  
+  /* 右侧部分样式 */
+.right-section-EQ {
+    flex: 30; /* 占据可用空间的一部分 */
+    background-color: rgba(192, 192, 192, 0.3); /* 浅灰色，30% 透明度 */
+    border-radius: 5px; /* 角部弧度5 */
+    margin-top: 20px;
+    padding: 10px;
+}
+  
+  
+.option-list {
+  background-color: #fff;
+  width: 90%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.option-list >div {
+  width: 50%;
+}
+
+.option-list >div >label {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.option-list >div >label >div:nth-child(2) {
+  color: #fff;
+  font-weight: bold;
+  background-color: red;
+  padding: 3px;
+  border-radius: 3px;
+  margin-left: 10px;
+  margin-right: 20px;
+  width: 20px;
+  text-align: center;
+}
+
+.option-list >div >label >div:nth-child(3) {
+  max-width: 60%;
+  word-wrap: break-word;
+} 
+
+.tag-list {
+  background-color: #fff;
+  width: 100px;
+  list-style-type: none;
+  border-radius: 5px;
+}
+
+.tag-list >div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  transition: all 0.1s ease;
+}
+
+.tag-list >div:hover {
+  color: #fff;
+  background-color: rgba(255, 0, 0, 1);
+  cursor: pointer;
+}
+
+.question-type-container {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  padding-left: 30px;
+}
+
+.question-image-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.question-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#image-upload {
+  display: none;
+}
+
+.image-upload-label {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: 400;
+  padding: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.question-minutes{
+  margin-left: 10px;
+}
+
+.question-preview-image {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  margin: 0 auto;
+  display: block;
+}
+
+.option-list-preview {
+  width: 100%;
+  background-color: transparent;
+}
+
+.option-input-order {
+  width: 10px;
+}
+
+.option-input-text {
+  width: 100px;
+  margin-right: 5px;
+}
+
+.remove-option {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 5px;
+  padding: 0;
+}

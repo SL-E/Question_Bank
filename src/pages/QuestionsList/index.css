@@ -1,0 +1,100 @@
+/* 去掉外边框并拉高上部外间距 */
+.top-section-CourseNo {
+    margin-top: 30px; /* 调整上部外间距 */
+    border: none; /* 去掉外边框 */
+}
+  
+  /* 保持其他样式不变 */
+.top-row {
+    display: flex;
+    align-items: center;
+}
+  
+label {
+    margin-right: 30px;
+    font-weight: bold;
+}
+  
+select {
+    width: 200px;
+    height: 35px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+  
+  /* 中间部分 */
+.middle-section-QL {
+    display: flex;
+    flex-direction: column;
+}
+  
+.middle-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+  
+.left-section-QL h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.right-section-QL {
+  display: flex; /* 使用 flex 布局 */
+  justify-content: space-between;
+  align-items: center;
+}
+  
+.create-question-button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.create-question-button:hover {
+    background-color: #218838;
+}
+  
+  /* 表格部分 */
+.questions-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+  
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+  
+  /* 分页部分 */
+.bottom-section {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+  
+.pagination {
+    display: inline-block;
+}
+  
+.pagination a {
+    color: #007bff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+  
+.pagination a:hover {
+    background-color: #007bff;
+    color: white;
+}
+  
