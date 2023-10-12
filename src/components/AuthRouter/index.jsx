@@ -6,6 +6,8 @@ import Login from '../../pages/Login'
 import Home from '../../pages/Home';
 import Main from '../../pages/Main';
 import Admin from '../../pages/Admin';
+import User from '../../pages/User';
+
 import QuestionsList from '../../pages/QuestionsList';
 import EditQuestion from '../../pages/EditQuestion';
 
@@ -14,15 +16,23 @@ import TeachersList from '../TeacherList';
 import AddNewTeacherList from '../AddNewTeacherList';
 import EditTeacher from '../EditTeacher';
 
+import UserQuestions from '../UserQuestions';
+
+import DivisionList from '../DivisionList';
+import AddNewDivision from '../AddNewDivision';
+import EditDivision from '../EditDivision';
+
 import ExamsList from '../../pages/ExamList';
 import CreateExam from '../../pages/CreateExam';
 import ExamPreview from '../../pages/ExamPreview';
 import EditExam from '../../pages/EditExam';
 
+import CreateCourse from '../../pages/CreateCourse';
+import CourseList from '../../pages/CourseList';
 
-import Test from '../../pages/Test'
-import Test2 from '../../pages/Test2'
-import Test3 from '../../pages/Test3'
+import Test from '../../pages/Test';
+import Test2 from '../../pages/Test2';
+import Test3 from '../../pages/Test3';
 
 
 const requireAuth = (component, isAuthenticated) => {
@@ -52,6 +62,30 @@ function AuthRouter ({ isAuthenticated }) {
       element: <Main />,
     },
     {
+      path: '/User',
+      element: (
+        <>
+          {/* 添加导航链接到 Admin 组件 */}
+          <Link to="/User"></Link>
+          <User />
+        </>
+      ),
+      children:[
+        {
+          path: 'MyQuestions',
+          element: <UserQuestions />,
+        },
+        // {
+        //   path: 'addnewteacher',
+        //   element: <AddNewTeacherList />,  
+        // },
+        // {
+        //   path: 'addnewteacher',
+        //   element: <AddNewTeacherList />,  
+        // },
+      ]
+    },
+    {
       path: '/Admin',
       element: (
         <>
@@ -73,32 +107,55 @@ function AuthRouter ({ isAuthenticated }) {
           path: 'editteacher',
           element: <EditTeacher />,  
         },
+
+        {
+          path: 'divisionList',
+          element: <DivisionList />,
+        },
+        {
+          path: 'addnewdivision',
+          element: <AddNewDivision />,  
+        },
+        {
+          path: 'editdivision',
+          element: <EditDivision />,  
+        },
       ]
     },
     {
       path: '/question/view',
-      element: <QuestionsList />, // 将导航到 QuestionsList 组件
+      element: <QuestionsList />, 
     },
     {
       path: '/question/edit',
-      element: <EditQuestion />, // 将导航到 QuestionsList 组件
+      element: <EditQuestion />,
     },
     {
       path: '/exam/view',
-      element: <ExamsList />, // 将导航到 QuestionsList 组件
+      element: <ExamsList />,
     },
     {
       path: '/exam/new',
-      element: <CreateExam />, // 将导航到 QuestionsList 组件
+      element: <CreateExam />,
     },
     {
       path: '/exam/preview',
-      element: <ExamPreview />, // 将导航到 QuestionsList 组件
+      element: <ExamPreview />,
     },
     {
       path: '/exam/edit',
-      element: <EditExam />, // 将导航到 QuestionsList 组件
+      element: <EditExam />,
     },
+   
+    {
+      path: '/course/view',
+      element: <CourseList />,
+    },
+    {
+      path: '/course/new',
+      element: <CreateCourse />,
+    },
+
     {
       path: '/Test',
       element: <Test />,

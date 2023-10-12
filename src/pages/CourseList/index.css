@@ -1,0 +1,102 @@
+/* CourseList.css */
+
+.custom-course-list {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.custom-action-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* 垂直居中对齐 */
+    margin-bottom: 20px;
+}
+
+.custom-create-button {
+    background-color: green;
+    color: white;
+    width: 200px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: -10px;
+    margin-left: 250px;
+}
+
+.custom-select-container {
+    display: flex;
+    align-items: center; /* 垂直居中对齐 */
+}
+
+.custom-select-container label {
+    margin-right: 10px;
+    width: 150px;
+    white-space: nowrap; /* 防止文字换行 */
+    overflow: hidden; /* 隐藏溢出部分 */
+    text-overflow: ellipsis; /* 使用省略号表示溢出的文本 */
+}
+
+.custom-select-CL {
+    width: 150px; /* 填充整个宽度 */
+    height: 30px;
+}
+
+.custom-table-container {
+    overflow-x: hidden; /* 隐藏水平滚动条 */
+}
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    background-color: #f4f4f4;
+    text-align: center; /* 居中对齐 */
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap; /* 防止文字换行 */
+    overflow: hidden; /* 隐藏溢出部分 */
+    text-overflow: ellipsis; /* 使用省略号表示溢出的文本 */
+}
+
+tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+td {
+    padding: 10px;
+}
+
+.arrow {
+    font-size: 18px; /* 符号大小，你可以根据需要调整 */
+  }
+  
+  /* 样式类用于上箭头符号 */
+  .arrow-up {
+    transform: rotate(180deg); /* 旋转180度，将其颠倒 */
+  }
+
+.custom-edit-button {
+    background-color: blue;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.custom-delete-button {
+    background-color: red;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -107,6 +107,7 @@ function ExamPreview() {
     let compareTmpList = [];
     for (let i=0;i<questionList.length;i++) {
       const quesNo = questionList[i].questionNo;
+      const order = questionList[i].order;
       const questionInfoReq = await getQuestionByNo({
         params: {
           quesNo: quesNo
@@ -116,8 +117,11 @@ function ExamPreview() {
       if (questionInfo.length === 0) {
         continue;
       }
-      compareTmpList.push(questionInfo[0]);
+      let qInfo = questionInfo[0];
+      qInfo["order"] = parseInt(order);
+      compareTmpList.push(qInfo);
     }
+    compareTmpList.sort(sortQuesByOrder('order'));
     setCompareQuesList(compareTmpList);
   };
 
@@ -138,6 +142,7 @@ function ExamPreview() {
     let versionTmpList = [];
     for (let i=0;i<questionList.length;i++) {
       const quesNo = questionList[i].questionNo;
+      const order = questionList[i].order;
       const questionInfoReq = await getQuestionByNo({
         params: {
           quesNo: quesNo
@@ -147,9 +152,29 @@ function ExamPreview() {
       if (questionInfo.length === 0) {
         continue;
       }
-      versionTmpList.push(questionInfo[0]);
+      let qInfo = questionInfo[0];
+      qInfo["order"] = parseInt(order);
+      versionTmpList.push(qInfo);
     }
+    versionTmpList.sort(sortQuesByOrder('order'));
     setVersionQuesList(versionTmpList);
+  };
+
+  const sortQuesByOrder = (field, s) => {
+    let rev = 1;
+    if (s === 'desc') {
+      rev = -1;
+    }
+    return function(objA, objB) {
+      let fieldA = objA[field];
+      let fieldB = objB[field];
+      if (fieldA < fieldB) {
+        return rev * -1;
+      } else if (fieldA > fieldB) {
+        return rev * 1;
+      }
+      return 0;
+    }
   };
 
   const handleSaveToRightButton = async () => {
@@ -243,7 +268,7 @@ function ExamPreview() {
             {versionQuesList.map((versionQuesInfo) => (
                 <div>
                   <img width="100px" height="100px" src={versionQuesInfo.picture} />
-                  <div>{versionQuesInfo.questionType}, {versionQuesInfo.questionText}</div>
+                  <div>{versionQuesInfo.order}、({versionQuesInfo.questionType}) {versionQuesInfo.questionText}</div>
                   {versionQuesInfo.optionList.map((option) => (
                       <div>
                         <span>{option.order} {option.text}</span>
@@ -266,7 +291,7 @@ function ExamPreview() {
             {compareQuesList.map((versionQuesInfo) => (
                 <div>
                   <img width="100px" height="100px" src={versionQuesInfo.picture} />
-                  <div>{versionQuesInfo.questionType}, {versionQuesInfo.questionText}</div>
+                  <div>{versionQuesInfo.order}、({versionQuesInfo.questionType}) {versionQuesInfo.questionText}</div>
                   {versionQuesInfo.optionList.map((option) => (
                       <div>
                         <span>{option.order} {option.text}</span>
@@ -288,3 +313,4 @@ function ExamPreview() {
 }
 
 export default ExamPreview;
+

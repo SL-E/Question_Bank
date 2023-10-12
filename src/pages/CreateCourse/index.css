@@ -1,0 +1,79 @@
+/* editcourse.css */
+
+.edit-course {
+    padding: 20px;
+  }
+
+  .head-backbutton{
+    display: flex;
+    align-items: center;
+  }
+  
+  h2 {
+    margin-left: 150px;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center; /* 垂直居中对齐标签和输入框 */
+    /* 可以根据需要添加其他样式，例如间距、边框等 */
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    width: 220px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .custom-select, .custom-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .custom-input-comments {
+    width: 150%;
+    height: 100px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .custom-select,
+  .custom-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 可以添加其他样式 */
+  }
+  
+  .custom-confirm-button {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
