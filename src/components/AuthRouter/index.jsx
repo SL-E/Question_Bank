@@ -12,12 +12,14 @@ import QuestionsList from '../../pages/QuestionsList';
 import EditQuestion from '../../pages/EditQuestion';
 
 import './index.css';
+
 import TeachersList from '../TeacherList';
 import AddNewTeacherList from '../AddNewTeacherList';
 import EditTeacher from '../EditTeacher';
 
 import UserQuestions from '../UserQuestions';
 import UserInfo from '../UserInfo';
+import ArchiveHistory from '../ArchiveHistory';
 
 import DivisionList from '../DivisionList';
 import AddNewDivision from '../AddNewDivision';
@@ -30,6 +32,7 @@ import EditExam from '../../pages/EditExam';
 
 import CreateCourse from '../../pages/CreateCourse';
 import CourseList from '../../pages/CourseList';
+import EditCourse from '../../pages/EditCourse';
 
 import Test from '../../pages/Test';
 import Test2 from '../../pages/Test2';
@@ -80,10 +83,10 @@ function AuthRouter ({ isAuthenticated }) {
           path: 'UserInfo',
           element: <UserInfo />,  
         },
-        // {
-        //   path: 'addnewteacher',
-        //   element: <AddNewTeacherList />,  
-        // },
+        {
+          path: 'ArchiveHistory',
+          element: <ArchiveHistory />,  
+        },
       ]
     },
     {
@@ -153,10 +156,13 @@ function AuthRouter ({ isAuthenticated }) {
       element: <CourseList />,
     },
     {
-      path: '/course/new',
+      path: '/course/create',
       element: <CreateCourse />,
     },
-
+    {
+      path: '/course/edit',
+      element: <EditCourse />,
+    },
     {
       path: '/Test',
       element: <Test />,

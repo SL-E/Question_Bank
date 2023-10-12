@@ -26,7 +26,6 @@ function NavigationBar() {
                             <div className="dropdown-content">
                                 <Link to="/course/view">View Course</Link>
                                 <Link to="/course/create">Create Course</Link>
-                                <Link to="/course/edit">Edit Course</Link>
                             </div>  
                             <div>Course <span className="dropdown-arrow">&#9662;</span></div>
                         </li>

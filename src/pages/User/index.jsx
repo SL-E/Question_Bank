@@ -18,7 +18,7 @@ function User() {
                     <Link to="/User/MyQuestions">My Questions</Link>
                 </div>
                 <div className="menu-item-U">
-                    <Link to="#">Archive History</Link>
+                    <Link to="/User/ArchiveHistory">Archive History</Link>
                 </div>
                 <div className="menu-item-U">
                     <Link to="#">Settings</Link>
