@@ -17,6 +17,7 @@ import AddNewTeacherList from '../AddNewTeacherList';
 import EditTeacher from '../EditTeacher';
 
 import UserQuestions from '../UserQuestions';
+import UserInfo from '../UserInfo';
 
 import DivisionList from '../DivisionList';
 import AddNewDivision from '../AddNewDivision';
@@ -75,10 +76,10 @@ function AuthRouter ({ isAuthenticated }) {
           path: 'MyQuestions',
           element: <UserQuestions />,
         },
-        // {
-        //   path: 'addnewteacher',
-        //   element: <AddNewTeacherList />,  
-        // },
+        {
+          path: 'UserInfo',
+          element: <UserInfo />,  
+        },
         // {
         //   path: 'addnewteacher',
         //   element: <AddNewTeacherList />,  
