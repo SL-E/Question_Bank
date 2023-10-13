@@ -32,7 +32,7 @@ function NavigationBar() {
                         <li className="dropdown">
                             <div className="dropdown-content">
                                 <Link to="/question/view">View Question</Link>
-                                <Link to="/question/edit">Edit Question</Link>
+                                <Link to="/question/edit">Create Question</Link>
                                 {/* 添加其他选项 */}
                             </div>
                             <div>Question <span className="dropdown-arrow">&#9662;</span></div>

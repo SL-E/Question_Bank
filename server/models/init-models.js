@@ -7,6 +7,7 @@ var _exam_update_record = require("./exam_update_record");
 var _question = require("./question");
 var _question_options = require("./question_options");
 var _question_types = require("./question_types");
+var _questions = require("./questions");
 var _tags = require("./tags");
 var _teachers = require("./teachers");
 var _universities = require("./universities");
@@ -20,14 +21,19 @@ function initModels(sequelize) {
   var question = _question(sequelize, DataTypes);
   var question_options = _question_options(sequelize, DataTypes);
   var question_types = _question_types(sequelize, DataTypes);
+  var questions = _questions(sequelize, DataTypes);
   var tags = _tags(sequelize, DataTypes);
   var teachers = _teachers(sequelize, DataTypes);
   var universities = _universities(sequelize, DataTypes);
 
+  questions.belongsTo(courses, { as: "course", foreignKey: "course_id"});
+  courses.hasMany(questions, { as: "questions", foreignKey: "course_id"});
   teachers.belongsTo(divisions, { as: "division", foreignKey: "division_id"});
   divisions.hasMany(teachers, { as: "teachers", foreignKey: "division_id"});
   question_options.belongsTo(question, { as: "question", foreignKey: "question_id"});
   question.hasMany(question_options, { as: "question_options", foreignKey: "question_id"});
+  questions.belongsTo(question_types, { as: "type", foreignKey: "type_id"});
+  question_types.hasMany(questions, { as: "questions", foreignKey: "type_id"});
   courses.belongsTo(teachers, { as: "tid_teacher", foreignKey: "tid"});
   teachers.hasMany(courses, { as: "courses", foreignKey: "tid"});
   divisions.belongsTo(universities, { as: "uid_university", foreignKey: "uid"});
@@ -44,6 +50,7 @@ function initModels(sequelize) {
     question,
     question_options,
     question_types,
+    questions,
     tags,
     teachers,
     universities,

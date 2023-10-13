@@ -27,6 +27,7 @@ function EditDivision() {
       </button>
 
       <div className="division-form">
+        <h3>Edit this division</h3>
         <div className="form-row">
           <label>Division Name:</label>
           <input

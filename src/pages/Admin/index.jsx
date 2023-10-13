@@ -19,7 +19,7 @@ function Admin() {
                     <Link to="#">Universities</Link>
                 </div>
                 <div className="menu-item">
-                    <Link to="#">List of Divisions</Link>
+                    <Link to="/Admin/divisionlist">List of Divisions</Link>
                 </div>
                 <div className="menu-item">
                     <Link to="/Admin/teacherslist">List of Teachers</Link>

@@ -27,6 +27,7 @@ function AddNewDivision() {
       </button>
 
       <div className="division-form">
+        <h3>Create a new division</h3>
         <div className="form-row">
           <label>Division Name:</label>
           <input

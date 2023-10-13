@@ -8,7 +8,7 @@ module.exports = function(sequelize, DataTypes) {
       primaryKey: true
     },
     name: {
-      type: DataTypes.STRING(200),
+      type: DataTypes.STRING(50),
       allowNull: false
     },
     number: {
@@ -22,10 +22,6 @@ module.exports = function(sequelize, DataTypes) {
         model: 'teachers',
         key: 'id'
       }
-    },
-    division_id: {
-      type: DataTypes.INTEGER,
-      allowNull: false
     }
   }, {
     sequelize,
