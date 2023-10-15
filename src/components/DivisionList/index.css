@@ -1,0 +1,106 @@
+.divisions-content {
+    margin: 20px;
+  }
+  
+  .header-container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header-container h2 {
+    margin: 0;
+  }
+  
+  .table-container {
+    max-height: 850px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+  }
+  
+  .table-container table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+  }
+  
+  th,
+  td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  .odd-row {
+    background-color: rgba(128, 128, 128, 0.2);
+  }
+  
+  .even-row {
+    background-color: transparent;
+  }
+  
+  button {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  td a.delete-link {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  td a.delete-link:hover {
+    background-color: darkred;
+  }
+  
+  td:nth-child(1),
+  th:nth-child(1) {
+    width: 12%;
+  }
+  
+  td:nth-child(2),
+  th:nth-child(2) {
+    width: 32%;
+  }
+  
+  td:nth-child(3),
+  th:nth-child(3) {
+    width: 17%;
+  }
+  
+  .add-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    height: 35px;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-button:hover {
+    background-color: #218838;
+  }
+  

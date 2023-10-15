@@ -1,0 +1,24 @@
+.userInfoContainer {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .userInfoField {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .userInfoField label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .userInfoField button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  

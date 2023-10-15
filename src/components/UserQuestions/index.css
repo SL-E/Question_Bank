@@ -1,0 +1,109 @@
+/* UserQuestions.css */
+
+.user-questions-container {
+    margin: 10%;
+  }
+  
+  .courses-dropdown {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .courses-dropdown label {
+    width: 130px;
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  .courses-dropdown select {
+    width: 200px;
+    padding: 5px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .questions-table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+  }
+  
+  .questions-table th,
+  .questions-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .questions-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+
+  .questions-table th:nth-child(1),
+.questions-table td:nth-child(1) {
+  width: 15%; /* 修改第一列的宽度为 50px */
+}
+
+.questions-table th:nth-child(2),
+.questions-table td:nth-child(2) {
+  width: 25%; /* 修改第二列的宽度为 100px */
+}
+
+.questions-table th:nth-child(3),
+.questions-table td:nth-child(3) {
+  width: 20%; /* 修改第三列的宽度为 80px */
+}
+
+.questions-table th:nth-child(4),
+.questions-table td:nth-child(4) {
+  width: 20%; /* 修改第四列的宽度为 80px */
+}
+
+.questions-table th:nth-child(5),
+.questions-table td:nth-child(5) {
+  width: 20%; /* 修改第五列的宽度为 120px */
+}
+  
+  .questions-table tr:nth-child(odd) {
+    background-color: rgba(128, 128, 128, 0.2);
+  }
+  
+  .questions-table tr:nth-child(even) {
+    background-color: transparent;
+  }
+  
+  .delete-button-MQ {
+    width: 60px;
+    height: 30px;
+    padding: 5px 10px;
+    background-color: red; /* 删除按钮颜色为红色 */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .preview-button-MQ {
+    width: 60px;
+    height: 30px;
+    padding: 5px 10px;
+    background-color: rgb(17, 0, 255); /* 删除按钮颜色为红色 */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .delete-button-MQ:hover{
+    background-color: darkred; /* 鼠标悬停时的删除按钮颜色 */
+  }
+  
+  .preview-button-MQ:hover {
+    background-color: rgb(26, 0, 78); /* 鼠标悬停时的删除按钮颜色 */
+  }

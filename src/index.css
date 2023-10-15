@@ -1,0 +1,11 @@
+body {
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+}
+
+
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('./fonts/FiraSans-HeavyItalic.woff2');
+ }

@@ -1,0 +1,94 @@
+.login-box {
+  width: 100vw;
+  height: 100%;
+  background-image: url(../../../public/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login-content {
+    width: 100vw;
+    height: 50vh;
+    background-color: #fff;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.divider {
+    width: 2px;
+    height: 300px;
+    background-color: #666;
+    align-self: flex-end;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.login-content-left >p {
+    font-size: 25px;
+    color: rgb(107, 149, 207);
+}
+
+.login-content-left-option {
+    font-size: 20px;
+    color: rgb(107, 149, 207);
+    margin-bottom: 10px;
+}
+
+.login-content-left-tip {
+    width: 400px;
+    color: #666;
+}
+
+.login-content-left input {
+    width: 400px;
+    height: 35px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+
+.login-content-left-forget {
+    margin-bottom: 30px;
+    color: rgb(107, 149, 207);
+    cursor: pointer;
+}
+
+.login-content-left-login {
+    background-color: orange;
+    padding: 10px;
+    border-radius: 30px;
+    width: 60px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.login-content-right-part {
+    font-size: 25px;
+    color: rgb(132, 129, 179);
+    margin-bottom: 20px;
+}
+
+.login-content-right-content {
+    color: #888;
+    font-size: 13px;
+    width: 400px;
+}
+
+.login-content-create {
+    width: 160px;
+    height: 30px;
+    padding: 15px;
+    line-height: 30px;
+    color: #fff;
+    background-color: rgb(0, 68, 128);
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
